@@ -1,0 +1,60 @@
+URL:https://repl.it/repls/SimpleImmenseParallelcompiler
+
+
+import java.util.Scanner;
+
+class Main {
+  
+  public static void checkBalance() 
+  {
+    // show theuser their bank balance 
+    System.out.println("TODO: show balance");
+
+  }
+  
+  public static void deposit() 
+  {
+    // add money to the account
+    System.out.println("TODO: deposit money");
+  }
+
+  public static void withdraw() 
+  {
+    // remove money from the account
+    System.out.println("TODO: withdraw money");
+  }
+  public static void main(String[] args) 
+  {
+    // this program is an ATM Simulator
+    // you can add money, withdraw, and check your balances.
+    System.out.println("Welcome to the ATM");
+    System.out.println("---------------------");
+    System.out.println("1. Check balance");
+    System.out.println("2. Deposit funds");
+    System.out.println("3. Withdraw funds");
+    System.out.println("4. Exit");
+
+    // ask user to input menuChoice
+    Scanner keyboard = new Scanner(System.in);
+    int menuChoice = keyboard.nextInt();
+
+    if (menuChoice == 1)
+    {
+      checkBalance();
+    }
+    else if (menuChoice == 2) 
+    {
+      deposit();
+    }
+    else if (menuChoice == 3)
+    {
+      withdraw();
+    }
+    else if (menuChoice == 4)
+    {
+      System.out.println("TODO: End program");
+    }
+    // 4 is exit
+
+  }
+}
